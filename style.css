@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #1a1a1a, #4a4a4a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Press Start 2P', cursive;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.game-info {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #00ff00;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    margin: 0;
+}
+
+.info-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.score, .level {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-family: 'Press Start 2P', cursive;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#startBtn {
+    background-color: #00ff00;
+    color: #000;
+}
+
+#pauseBtn {
+    background-color: #ff9900;
+    color: #000;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.audio-controls {
+    margin-top: 10px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+#toggleBGM {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.volume-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.volume-control label {
+    font-size: 12px;
+    color: #00ff00;
+}
+
+#volumeSlider {
+    flex: 1;
+    height: 5px;
+    -webkit-appearance: none;
+    background: #00ff00;
+    border-radius: 5px;
+    outline: none;
+}
+
+#volumeSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#gameCanvas {
+    border: 3px solid #00ff00;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+}
+
+.instructions {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.instructions h3 {
+    font-size: 14px;
+    margin: 0 0 15px 0;
+    color: #00ff00;
+}
+
+.instructions p {
+    font-size: 12px;
+    margin: 8px 0;
+    color: #fff;
+}
